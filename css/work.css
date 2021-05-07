@@ -1,0 +1,44 @@
+.work__item {
+  --grid__item: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .work__item {
+    --grid__item: 3;
+  }
+}
+
+@media screen and (max-width: 768px), (max-width: 1199px) {
+  .section--hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}
+
+.product-thumb {
+  position: relative;
+}
+
+.product-thumb p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+/*# sourceMappingURL=work.css.map */
