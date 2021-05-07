@@ -1,5 +1,4 @@
 .menu {
-  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -10,7 +9,7 @@
   color: var(--title-color);
 }
 
-.menu--pos {
+.menu__list {
   display: flex;
   align-items: center;
   margin-right: auto;

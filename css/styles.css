@@ -174,7 +174,6 @@ p {
 }
 
 .menu {
-  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -185,7 +184,7 @@ p {
   color: var(--title-color);
 }
 
-.menu--pos {
+.menu__list {
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -629,6 +628,12 @@ p {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -643,15 +648,18 @@ p {
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  max-height: 350px;
+  min-height: 300px;
   z-index: 1;
   background-color: #ffffff;
-  padding: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 20px;
   text-align: start;
   font-size: 20px;
 }
@@ -667,6 +675,11 @@ p {
 
 .header-social {
   display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .header-social__item:not(:first-child) {
@@ -676,6 +689,22 @@ p {
 .header-social__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu__tell {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .hero {
