@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./css/styles.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"/>
+        <link rel="stylesheet" href="./css/styles.min.css"/>
+    </head>
 <body>
 
    <!--Header section -->
@@ -18,8 +19,8 @@
         <a class="link logo header__logo--pos" href="./index.html"><span class="logo__color">Web</span>Studio</a>
           <nav class="menu nav">
             <ul class="menu__list  menu__title--color">
-                <li class="menu__item"><a class="link menu__link current" href="./index.html">Студия</a></li>                
-                <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>               
+                <li class="menu__item"><a class="link menu__link " href="./index.html">Студия</a></li>                
+                <li class="menu__item"><a class="link menu__link current" href="./portfolio.html">Портфолио</a></li>               
                 <li class="menu__item"><a class="link menu__link" href="tel:+380961111111">Контакты</a></li> 
             </ul>
         </nav>
@@ -28,7 +29,7 @@
             type="button"
             class="menu-button is-open" 
             aria-expanded="false"
-            aria-controls="menu-container"
+            aria-controls="mobile-menu"
             data-menu-button>
             <svg
               width="40"
@@ -55,25 +56,25 @@
             </ul> 
     
         </div> 
-        <div class="menu-container" id="menu-container is-open" data-menu>
-            <ul class="mobile__list">
-                <li class="mobile__item"><a href="index.html" class="menu-item__link here">Студия</a></li>
-                <li class="mobile__item"><a href="./portfolio.html" class="menu-item__link">Портфолио</a></li>
-                <li class="mobile__item"><a href="" class="menu-item__link">Контакты</a></li>
+    <div class="mobile-menu mobile-menu--flexbox" id="mobile-menu is-open" data-menu>
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item"><a href="index.html" class="menu-item__link link">Студия</a></li>
+                <li class="mobile-nav__item"><a href="./portfolio.html" class="menu-item__link link">Портфолио</a></li>
+                <li class="mobile-nav__item"><a href="" class="menu-item__link link">Контакты</a></li>
               </ul>
-              <div class="mobile--bottom">
-              <ul class="mobile-contact__list">
-                <li class="mobile-contact__item"><a href="tell:+380961111111" class="menu__tell">+38 096 111 11 11</a></li>
-                <li class="mobile-contact__item"><a href="mailto:info@devstudio.com" class="menu__mail">info@devstudio.com</a></li>
+              <div class="">
+              <ul class="mobile-contacts">
+                <li class="mobile-contact__item"><a href="tell:+380961111111" class="link menu__tell">+38 096 111 11 11</a></li>
+                <li class="mobile-contact__item"><a href="mailto:info@devstudio.com" class="link menu__mail">info@devstudio.com</a></li>
               </ul>
-              <ul class="header-social">
-                <li class="header-social__item"><a href class="header-social__link link">Instagram</a></li>
-                <li class="header-social__item"><a href class="header-social__link link">Twitter</a></li>
-                <li class="header-social__item"><a href class="header-social__link link">Facebook</a></li>
-                <li class="header-social__item"><a href class="header-social__link link">Linkedin</a></li>
+              <ul class="mobile-networks">
+                <li class="mobile-networks__item"><a href class="header-social__link link">Instagram</a></li>
+                <li class="mobile-networks__item"><a href class="header-social__link link">Twitter</a></li>
+                <li class="mobile-networks__item"><a href class="header-social__link link">Facebook</a></li>
+                <li class="mobile-networks__item"><a href class="header-social__link link">Linkedin</a></li>
             </ul>
         </div>
-          </div> 
+    </div> 
     </header>
     <!--Main section-->  
 
@@ -124,9 +125,9 @@
                     <picture>
                         <source srcset="./images/figma/portfolio/desktop/portfoliolink2desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <source srcset="./images/figma/portfolio/tablet/portfoliolink2tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t2blet@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/tablet/portfoliolink2tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
-                        <source srcset="./images/figma/portfolio/mobile/portfoliolink2mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m2bile@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/mobile/portfoliolink2mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x"
                         media="(max-width: 767px)">
                         <img src="./images/webstudio/img2.jpg" width="450" alt="Дизайн"> 
                     </picture>                        
@@ -148,9 +149,9 @@
                     <picture>
                         <source srcset="./images/figma/portfolio/desktop/portfoliolink3desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <source srcset="./images/figma/portfolio/tablet/portfoliolink3tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t3blet@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/tablet/portfoliolink3tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
-                        <source srcset="./images/figma/portfolio/mobile/portfoliolink3mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m3bile@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/mobile/portfoliolink3mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x"
                         media="(max-width: 767px)">
                         <img src="./images/webstudio/img3.jpg" width="450" alt="Приложение">       
                     </picture>
@@ -173,9 +174,9 @@
                     <picture>
                         <source srcset="./images/figma/portfolio/desktop/portfoliolink4desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <source srcset="./images/figma/portfolio/tablet/portfoliolink4tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t4blet@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/tablet/portfoliolink4tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
-                        <source srcset="./images/figma/portfolio/mobile/portfoliolink4mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m4bile@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/mobile/portfoliolink4mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x"
                         media="(max-width: 767px)">
                         <img src="./images/webstudio/img4.jpg" width="450" alt="Маркетинг">       
                     </picture>
@@ -198,9 +199,9 @@
                     <picture>
                         <source srcset="./images/figma/portfolio/desktop/portfoliolink5desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <source srcset="./images/figma/portfolio/tablet/portfoliolink5tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t5blet@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/tablet/portfoliolink5tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
-                        <source srcset="./images/figma/portfolio/mobile/portfoliolink5mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m5bile@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/mobile/portfoliolink5mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x"
                         media="(max-width: 767px)">
                         <img src="./images/webstudio/img5.jpg" width="450" alt="Приложение">       
                     </picture>
@@ -223,9 +224,9 @@
                     <picture>
                         <source srcset="./images/figma/portfolio/desktop/portfoliolink6desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x"
                         media="(min-width: 1200px)">
-                        <source srcset="./images/figma/portfolio/tablet/portfoliolink6tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t6blet@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/tablet/portfoliolink6tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink6tablet@2x.jpg 2x"
                         media="(min-width: 768px)">
-                        <source srcset="./images/figma/portfolio/mobile/portfoliolink6mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m6bile@2x.jpg 2x"
+                        <source srcset="./images/figma/portfolio/mobile/portfoliolink6mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x"
                         media="(max-width: 767px)">
                         <img src="./images/webstudio/img6.jpg" width="450" alt="Веб-сайт">       
                     </picture>
@@ -247,9 +248,9 @@
                         <picture>
                             <source srcset="./images/figma/portfolio/desktop/portfoliolink7desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <source srcset="./images/figma/portfolio/tablet/portfoliolink7tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t7blet@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/tablet/portfoliolink7tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x"
                             media="(min-width: 768px)">
-                            <source srcset="./images/figma/portfolio/mobile/portfoliolink7mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m7bile@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/mobile/portfoliolink7mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x"
                             media="(max-width: 767px)">
                             <img src="./images/webstudio/img7.jpg" width="450" alt="Дизайн">       
                         </picture>
@@ -271,9 +272,9 @@
                         <picture>
                             <source srcset="./images/figma/portfolio/desktop/portfoliolink8desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <source srcset="./images/figma/portfolio/tablet/portfoliolink8tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t8blet@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/tablet/portfoliolink8tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x"
                             media="(min-width: 768px)">
-                            <source srcset="./images/figma/portfolio/mobile/portfoliolink8mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m8bile@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/mobile/portfoliolink8mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x"
                             media="(max-width: 767px)">
                             <img src="./images/webstudio/img8.jpg" width="450" alt="Маркетинг">       
                         </picture>
@@ -295,9 +296,9 @@
                         <picture>
                             <source srcset="./images/figma/portfolio/desktop/portfoliolink9desktop.jpg 1x, ./images/figma/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x"
                             media="(min-width: 1200px)">
-                            <source srcset="./images/figma/portfolio/tablet/portfoliolink9tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink1t9blet@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/tablet/portfoliolink9tablet.jpg 1x, ./images/figma/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x"
                             media="(min-width: 768px)">
-                            <source srcset="./images/figma/portfolio/mobile/portfoliolink9mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink1m9bile@2x.jpg 2x"
+                            <source srcset="./images/figma/portfolio/mobile/portfoliolink9mobile.jpg 1x, ./images/figma/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x"
                             media="(max-width: 767px)">
                             <img src="./images/webstudio/img9.jpg" width="450" alt="Приложение">        
                         </picture>
