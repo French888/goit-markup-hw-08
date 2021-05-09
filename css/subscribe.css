@@ -1,14 +1,18 @@
-.subscribe {
-  margin-left: 93px;
-}
-
 .subscribe__title {
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: start;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--page-title-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__title {
+    text-align: center;
+  }
 }
 
 .subscribe__icon {
@@ -28,6 +32,7 @@
   border-radius: 4px;
   background: transparent;
   color: var(--page-title-color);
+  margin-bottom: 20px;
 }
 
 .subscribe__input::placeholder {
@@ -40,7 +45,11 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe--pos {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe--pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*# sourceMappingURL=subscribe.css.map */

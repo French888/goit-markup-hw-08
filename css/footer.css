@@ -3,14 +3,15 @@
   color: var(--title-color);
 }
 
-.address {
-  display: flex;
-  flex-direction: column;
+.adress {
+  display: block;
   color: var(--mail-tel-color);
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .logo--color {
@@ -22,23 +23,71 @@
   padding-bottom: 60px;
 }
 
-.logo--pos {
-  margin-bottom: 20px;
-}
-
 .address--pos {
   margin-bottom: 9px;
 }
 
-.section__footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__logo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-contacts__list {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .adress {
+    text-align: start;
+  }
+  .visit__us {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .visit__us {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .visit__us {
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer--center {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer__title {
-  display: inline-block;
-  margin-left: 70px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -51,6 +100,22 @@
 
 .footer__title--pos {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__title {
+    text-align: center;
+  }
+}
+
+.footer__list--start {
+  justify-content: left;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__list--start {
+    justify-content: left;
+  }
 }
 
 .social-icon--colorbg {

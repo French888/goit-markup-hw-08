@@ -12,9 +12,12 @@ border-bottom: 1px solid rgba(236, 236, 236, 0.5);
 }
 
 .menu-button {
-display: inline-flex;
+display: relative;
+width: 40px;
+height: 40px;
 margin: 0;
 padding: 0;
+z-index: 105;
 border: none;
 background-color: transparent;
 @media screen and (min-width: 768px){
@@ -35,12 +38,12 @@ display: none;
   .menu-container {
     display: none;
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     height: 100vh;
     width: 100vw;
     min-height: 300px;
-    z-index: 1;
+    z-index: 100;
     background-color: #ffffff;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -50,10 +53,12 @@ display: none;
     font-size: 20px;
 
     &.is-open {
-      display: block;
+      top: 0;
     }
+    
   }
-
+  
+  
   .mobile--bottom{
     position: absolute;
     bottom: 0;

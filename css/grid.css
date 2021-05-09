@@ -13,10 +13,7 @@
   flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.grid__item {
-  --grid__item: 3;
+  max-width: 354px;
 }
 
 .grid__border {

@@ -1,15 +1,3 @@
-.hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
 .hero__title {
   font-size: 26px;
   line-height: 1.62;
@@ -29,14 +17,22 @@
 
 .hero__overlay {
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   outline: 1px solid black;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icon/Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   border-style: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .hero__content {
