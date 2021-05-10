@@ -603,7 +603,7 @@ p {
   flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
   margin-left: 30px;
   margin-top: 30px;
-  max-width: 450px;
+  max-width: 354px;
 }
 
 .grid__border {
@@ -641,8 +641,6 @@ p {
 }
 
 .menu-button {
-  position: fixed;
-  right: 8%;
   width: 40px;
   height: 40px;
   margin: 0;
