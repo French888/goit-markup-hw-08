@@ -9,24 +9,16 @@
     --grid__item: 3;
   }} 
 
-  .card{
-    @media screen and (max-width: 767px){
-      width: 450px;
-    }
-    @media screen and (min-width: 768px){
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px){
-      width: 370px;
-    }
-  }
+  
   .card{
     border-top: 0px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
   }
-  
+  .card__link{
+    height: 404px;
+  }
 
 .card__thumb {
     position: relative;
