@@ -61,11 +61,6 @@
     flex-direction: column;
     text-align: center;
   }
-  .footer--center {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -116,7 +111,7 @@
 
 @media screen and (max-width: 1199.98px) {
   .footer__list--start {
-    justify-content: left;
+    justify-content: center;
   }
 }
 

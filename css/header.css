@@ -15,7 +15,8 @@
 }
 
 .menu-button {
-  display: flex;
+  position: fixed;
+  right: 8%;
   width: 40px;
   height: 40px;
   margin: 0;
