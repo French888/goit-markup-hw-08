@@ -13,18 +13,6 @@
   flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
   margin-left: 30px;
   margin-top: 30px;
-  max-width: 354px;
-}
-
-.grid__border {
-  width: 370px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: var(--page-title-color);
-  border: 1px solid rgba(238, 238, 238, 0.5);
-  box-sizing: border-box;
 }
 
 .grid--shadow:hover,

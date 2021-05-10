@@ -1,38 +1,40 @@
 
-   .hero__title{
-     font-size: 26px;
-     line-height: 1.62;
-     text-align: center;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
-     color:var(--page-title-color);
-     margin-bottom: 30px;
-      @media screen and (min-width: 1200px){
-       font-size: 44px;
-       line-height: 1.36 ;      
-     }
-     }
+.hero__title{
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color:var(--page-title-color);
+margin-bottom: 30px;
+@media screen and (min-width: 1200px){
+font-size: 44px;
+line-height: 1.36 ;      
+}}
 
-     .hero__overlay{
-      max-width: 1600px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 118px;
-      padding-bottom: 118px;
-      outline: 1px solid black;
-      background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), 
-        url(../images/figma/hero/hero.mobile.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      border-style: cover;
-      @media screen and (min-width: 1200px){
-        padding-top: 120px;
-        padding-bottom: 120px;
-      }
-      }
+.hero__overlay{
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 118px;
+padding-bottom: 118px;
+outline: 1px solid black;
+background-image: linear-gradient(
+to right, 
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)), 
+url(../images/figma/hero/hero.mobile.jpg);
+background-repeat: no-repeat;
+background-position: center;
+border-style: cover;
+}
+
+@media screen and (min-width: 1200px){
+.hero__overlay{
+padding-top: 120px;
+padding-bottom: 120px;
+}}
+
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero__overlay {
           background-image: linear-gradient(to right,

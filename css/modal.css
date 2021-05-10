@@ -17,9 +17,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 528px;
-  height: 580px;
-  padding: 15px;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   font-size: 12px;
   line-height: 1.66;
   letter-spacing: 0.01em;
@@ -30,10 +30,10 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 90vw;
-    height: 640px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -73,7 +73,6 @@
 }
 
 .modal__title {
-  padding-top: 40px;
   margin-bottom: 12px;
   font-style: 700;
   font-size: 20px;
@@ -174,11 +173,9 @@
 
 .check {
   margin-top: 20px;
-  padding-left: 25px;
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -188,34 +185,15 @@
 }
 
 .check__icon {
-  position: absolute;
-  top: 75%;
-  left: 23px;
   width: 16px;
   height: 15px;
   z-index: 101;
   border: 2px solid var(--title-color);
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .check__icon {
-    top: 71%;
-    left: 80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .check__icon {
-    top: 78%;
-    left: 50px;
-  }
 }
 
 .check__input {
-  position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
