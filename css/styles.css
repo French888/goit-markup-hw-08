@@ -735,7 +735,11 @@ p {
 }
 
 .hero__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -744,7 +748,7 @@ p {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/figma/hero/hero.mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  border-style: cover;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1350,7 +1354,7 @@ p {
 }
 
 .card__content {
-  padding: 20px 24px;
+  padding: 30px 24px;
   border-top: 0px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

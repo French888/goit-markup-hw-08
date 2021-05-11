@@ -13,7 +13,11 @@ line-height: 1.36 ;
 }}
 
 .hero__overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 max-width: 1600px;
+height: 600px;
 margin-left: auto;
 margin-right: auto;
 padding-top: 118px;
@@ -26,7 +30,7 @@ rgba(47, 48, 58, 0.4)),
 url(../images/figma/hero/hero.mobile.jpg);
 background-repeat: no-repeat;
 background-position: center;
-border-style: cover;
+background-size: cover;
 }
 
 @media screen and (min-width: 1200px){
